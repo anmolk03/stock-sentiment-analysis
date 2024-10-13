@@ -19,10 +19,12 @@ Analyze and predict stock movements by extracting and analyzing social media dat
 
 2. Install the required packages:
 bash
+
 pip install praw pandas matplotlib textblob yfinance
 
 
 3.Add your Reddit API credentials to the script.
+
   reddit = praw.Reddit(
     client_id='YOUR_CLIENT_ID',
     client_secret='YOUR_CLIENT_SECRET',
@@ -32,6 +34,7 @@ pip install praw pandas matplotlib textblob yfinance
 
 4. Run the script:
   bash
+
    sentiment_analysis.py
 
 
@@ -43,25 +46,32 @@ The script collects data from specific Reddit subreddits related to stocks and f
 Results
 
 The analysis includes sentiment scores correlated with stock prices and visualizations of sentiment trends over time.
+
 Sentiment Analysis: The average sentiment scores were calculated and plotted against the stock prices.
+
 Correlations: The correlation between sentiment and stock price movements was analyzed.
 
 
 Report Findings
 
 Stocks with high positive sentiment generally showed increased prices over time.
+
 Negative sentiment correlated with price drops, indicating potential sell signals.
 
 
 Recommendations
 
 It shows a strong correlation between negative sentiment and price drops; traders should proceed with caution.
+
 Consider monitoring social media sentiment regularly as it can provide early indicators of market trends.
+
 Integrate data from multiple sources (e.g., news articles) to enhance prediction accuracy.
+
 Experiment with advanced sentiment analysis techniques or machine learning models for better predictions.
 
 
 Future Improvements
 
 Integrate more data sources (e.g., news articles).
+
 Use advanced sentiment analysis techniques or machine learning models.
